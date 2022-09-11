@@ -8,7 +8,7 @@ import { Model } from 'mongoose';
 export class JogadoresService {
   constructor(
     @InjectModel('Jogador') private readonly jogadorModel: Model<Jogador>,
-  ) { }
+  ) {}
 
   private readonly logger = new Logger(JogadoresService.name);
 

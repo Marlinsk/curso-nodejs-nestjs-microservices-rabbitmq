@@ -11,4 +11,4 @@ import { JogadorSchema } from './schemas/jogador.schema';
   controllers: [JogadoresController],
   providers: [JogadoresService],
 })
-export class JogadoresModule { }
+export class JogadoresModule {}

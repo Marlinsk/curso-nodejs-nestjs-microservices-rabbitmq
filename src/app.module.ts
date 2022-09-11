@@ -17,4 +17,4 @@ import { JogadoresModule } from './jogadores/jogadores.module';
   controllers: [],
   providers: [],
 })
-export class AppModule { }
+export class AppModule {}
