@@ -15,7 +15,6 @@ import {
 } from '@nestjs/common';
 import { CriarJogadorDto } from './dtos/criar-jogador.dto';
 import { AtualizarJogadorDto } from './dtos/atualizar-jogador.dto';
-import { Observable } from 'rxjs';
 import { ValidacaoParametrosPipe } from '../common/pipes/validacao-parametros.pipe';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { JogadoresService } from './jogadores.service';
@@ -24,7 +23,7 @@ import { JogadoresService } from './jogadores.service';
 export class JogadoresController {
   private logger = new Logger(JogadoresController.name);
 
-  constructor(private jogadoresService: JogadoresService) {}
+  constructor(private jogadoresService: JogadoresService) { }
 
   @Post()
   @UsePipes(ValidationPipe)
